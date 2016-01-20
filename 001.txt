@@ -1,0 +1,42 @@
+9 	alert(1&&8);输出为多少？ 			
+
+10 关于prototype原型链，输出结果为多少？为什么？代码如下：
+
+function C1(name){
+If(name)this.name = name;
+}
+function C2(name){
+This.name = name;
+}
+function C3(name){
+This.name = name||’john’;
+}
+C1.prototype.name = ’tom’;
+C2.prototype.name = ’tom’;
+C3.prototype.name = ’tom’;
+alert ((new C1()).name + (new C2()).name + (new C3()).name);
+
+11 关于变量定义，代码如下，输出结果为多少:
+
+var val = 10;
+(function(){
+var json = {
+Val:12,
+abc:function(){
+val+ = this.val;
+}
+}
+json.abc();
+})();
+alert (val);
+
+12 代码如下，输出结果为多少：
+
+var test = (function(i){
+return function(){
+Return i* = 10;
+}
+})(2);
+alert(test(5));
+
+13 实现Data存储的类，包含获取内容(get),设置内容(set),删除内容(remove)三个方法。
