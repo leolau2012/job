@@ -1,6 +1,6 @@
-9 	alert(1&&8);Êä³öÎª¶àÉÙ£¿ 			
-
-10 ¹ØÓÚprototypeÔ­ĞÍÁ´£¬Êä³ö½á¹ûÎª¶àÉÙ£¿ÎªÊ²Ã´£¿´úÂëÈçÏÂ£º
+9 	alert(1&&8);è¾“å‡ºä¸ºå¤šå°‘ï¼Ÿ 		è¾“å‡ºç­”æ¡ˆï¼š8 è€ƒçš„æ˜¯&&è¿ç®—ï¼Œéƒ½ä¸ºçœŸæ‰æ˜¯çœŸï¼Œè¿”å›åé¢çš„	
+  
+10 å…³äºprototypeåŸå‹é“¾ï¼Œè¾“å‡ºç»“æœä¸ºå¤šå°‘ï¼Ÿä¸ºä»€ä¹ˆï¼Ÿä»£ç å¦‚ä¸‹ï¼š
 
 function C1(name){
 If(name)this.name = name;
@@ -9,14 +9,14 @@ function C2(name){
 This.name = name;
 }
 function C3(name){
-This.name = name||¡¯john¡¯;
+This.name = name||â€™johnâ€™;
 }
-C1.prototype.name = ¡¯tom¡¯;
-C2.prototype.name = ¡¯tom¡¯;
-C3.prototype.name = ¡¯tom¡¯;
+C1.prototype.name = â€™tomâ€™;
+C2.prototype.name = â€™tomâ€™;
+C3.prototype.name = â€™tomâ€™;
 alert ((new C1()).name + (new C2()).name + (new C3()).name);
 
-11 ¹ØÓÚ±äÁ¿¶¨Òå£¬´úÂëÈçÏÂ£¬Êä³ö½á¹ûÎª¶àÉÙ:
+11 å…³äºå˜é‡å®šä¹‰ï¼Œä»£ç å¦‚ä¸‹ï¼Œè¾“å‡ºç»“æœä¸ºå¤šå°‘:
 
 var val = 10;
 (function(){
@@ -30,7 +30,7 @@ json.abc();
 })();
 alert (val);
 
-12 ´úÂëÈçÏÂ£¬Êä³ö½á¹ûÎª¶àÉÙ£º
+12 ä»£ç å¦‚ä¸‹ï¼Œè¾“å‡ºç»“æœä¸ºå¤šå°‘ï¼š
 
 var test = (function(i){
 return function(){
@@ -39,4 +39,4 @@ Return i* = 10;
 })(2);
 alert(test(5));
 
-13 ÊµÏÖData´æ´¢µÄÀà£¬°üº¬»ñÈ¡ÄÚÈİ(get),ÉèÖÃÄÚÈİ(set),É¾³ıÄÚÈİ(remove)Èı¸ö·½·¨¡£
+13 å®ç°Dataå­˜å‚¨çš„ç±»ï¼ŒåŒ…å«è·å–å†…å®¹(get),è®¾ç½®å†…å®¹(set),åˆ é™¤å†…å®¹(remove)ä¸‰ä¸ªæ–¹æ³•ã€‚
