@@ -29,7 +29,7 @@ val+ = this.val;
 json.abc();
 })();
 alert (val);
-
+这里考的是 return 和json
 12 代码如下，输出结果为多少：
 
 var test = (function(i){
